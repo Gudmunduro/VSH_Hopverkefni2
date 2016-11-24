@@ -1,32 +1,17 @@
-var currentPage = 1, pageCount = 3, disabled = false;
+var currentPage = 1, pageCount = 4, disabled = false;
 
 
-function onScroll(e)
-{
+function onScroll(e) {
     if (disabled) return;
-    if (e.wheelDelta > 0)
-    {
+    if (e.wheelDelta > 0) {
         lastPage();
     }
-    else
-    {
+    else {
         nextPage();
     }
 }
 
-function nextPage()
-{
-    /*if (currentPage == pageCount)
-    {
-        var time = 0;
-        for (var i = 0; i < pageCount - 1; i++)
-        {
-            setTimeout(function () { lastPage(false); }, time);
-            time += 400;
-        }
-        setTimeout(function () { disabled = false; }, time - 400);
-        return;
-    }*/
+function nextPage() {
     if (currentPage == pageCount) return;
     disabled = true;
     document.getElementById("page" + currentPage).className = "lastPage";
@@ -35,10 +20,9 @@ function nextPage()
     setTimeout(function () { disabled = false; }, 400);
 }
 
-function lastPage()
-{
+function lastPage() {
     if (currentPage == 1) return;
-    disabled = false;
+    disabled = true;
     document.getElementById("page" + currentPage).className = "nextPage";
     currentPage--;
     document.getElementById("page" + currentPage).className = "page";

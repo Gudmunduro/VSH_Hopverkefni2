@@ -14,6 +14,9 @@ body{
 .page p{
     margin: 30px 50px;
 }
+.header{
+    text-align: center;
+}
 
 .nextPage{
     background-color: white;
