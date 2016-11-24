@@ -16,6 +16,17 @@ function onScroll(e)
 
 function nextPage()
 {
+    /*if (currentPage == pageCount)
+    {
+        var time = 0;
+        for (var i = 0; i < pageCount - 1; i++)
+        {
+            setTimeout(function () { lastPage(false); }, time);
+            time += 400;
+        }
+        setTimeout(function () { disabled = false; }, time - 400);
+        return;
+    }*/
     if (currentPage == pageCount) return;
     disabled = true;
     document.getElementById("page" + currentPage).className = "lastPage";
@@ -27,7 +38,7 @@ function nextPage()
 function lastPage()
 {
     if (currentPage == 1) return;
-    disabled = true;
+    disabled = false;
     document.getElementById("page" + currentPage).className = "nextPage";
     currentPage--;
     document.getElementById("page" + currentPage).className = "page";

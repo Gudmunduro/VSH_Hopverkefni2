@@ -3,6 +3,7 @@ body{
 }
 
 .page{
+    background-color: white;
     transition: all 500ms;
     position: fixed;
     left: 0;
@@ -15,19 +16,22 @@ body{
 }
 
 .nextPage{
+    background-color: white;
     transition: all 500ms;
     position: fixed;
-    left: 0;
-    top: 0;
+    left: 10%;
+    top: 10%;
     transform: translateY(100vh);
-    width: 100%;
-    height: 100vh;
+    width: 80%;
+    height: 80vh;
 }
 .nextPage p{
     margin: 30px 50px;
+    font-size: 0.8em;
 }
 
 .lastPage{
+    background-color: white;
     transition: all 500ms;
     position: fixed;
     left: 10%;
@@ -38,8 +42,5 @@ body{
 }
 .lastPage p{
     margin: 30px 50px;
-}
-
-.hidden{
-    display: none;
+    font-size: 0.8em;
 }
