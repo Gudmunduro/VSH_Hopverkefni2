@@ -60,6 +60,7 @@ body{
     font-size: 1.3em;
     line-height: 40px;
     margin: 30px 50px;
+    color: white;
 }
 
 .lastPage{
@@ -77,6 +78,7 @@ body{
     font-size: 1.3em;
     line-height: 40px;
     margin: 30px 50px;
+    color: white;
 }
 .sida1{
     position: absolute;
@@ -88,6 +90,44 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.sida2{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(myndir/19a26b9907dd49288c9b3fae7687126a.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sida3{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(myndir/421645.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sida4{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(myndir/grand-theft-auto-5-wallpaper-013.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
 
 .group:before,
 .group:after {
