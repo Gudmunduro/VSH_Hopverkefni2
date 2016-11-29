@@ -21,6 +21,7 @@ body{
     font-size: 1.3em;
     line-height: 40px;
     margin: 30px 50px;
+    color: white;
 }
 .header{
     font-family: pricedown;
@@ -76,6 +77,16 @@ body{
     font-size: 1.3em;
     line-height: 40px;
     margin: 30px 50px;
+}
+.sida1{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(myndir/3KA2Yj.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .group:before,
