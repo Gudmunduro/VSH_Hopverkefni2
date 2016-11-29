@@ -11,7 +11,8 @@ function onScroll(e) {
     }
 }
 
-function nextPage() {
+function nextPage()
+{
     if (currentPage == pageCount) return;
     disabled = true;
     document.getElementById("page" + currentPage).className = "lastPage";
@@ -20,7 +21,8 @@ function nextPage() {
     setTimeout(function () { disabled = false; }, 400);
 }
 
-function lastPage() {
+function lastPage()
+{
     if (currentPage == 1) return;
     disabled = true;
     document.getElementById("page" + currentPage).className = "nextPage";
