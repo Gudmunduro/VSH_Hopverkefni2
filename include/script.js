@@ -1,4 +1,4 @@
-var currentPage = 1, pageCount = 4, disabled = false;
+﻿var currentPage = 1, pageCount = 4, disabled = false;
 
 
 function onScroll(e) {
@@ -18,7 +18,7 @@ function nextPage()
     document.getElementById("page" + currentPage).className = "lastPage";
     currentPage++;
     document.getElementById("page" + currentPage).className = "page";
-    setTimeout(function () { disabled = false; }, 400);
+    setTimeout(function () { disabled = false; document.title = "Síða " + currentPage; }, 400);
 }
 
 function lastPage()
@@ -28,5 +28,5 @@ function lastPage()
     document.getElementById("page" + currentPage).className = "nextPage";
     currentPage--;
     document.getElementById("page" + currentPage).className = "page";
-    setTimeout(function () { disabled = false; }, 400);
+    setTimeout(function () { disabled = false; document.title = "Síða " + currentPage; }, 400);
 }
