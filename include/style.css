@@ -1,3 +1,8 @@
+﻿@font-face{
+    font-family: "pricedown";
+    src: url(pricedown.ttf) format("truetype");
+}
+
 body{
     background-color: gray;
 }
@@ -12,10 +17,33 @@ body{
     height: 100vh;
 }
 .page p{
+    font-family: Arial;
+    font-size: 1.3em;
+    line-height: 40px;
     margin: 30px 50px;
 }
 .header{
+    font-family: pricedown;
+    font-size: 4em;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: black;
+    color: white;
     text-align: center;
+    float: left;
+}
+.header2{
+    margin: 2px;
+    font-family: 'Wide Latin';
+    font-size: 4em;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    color: green;
+    text-align: center;
+}
+.titleBox{
+    margin: 20px auto;
+    width: 600px;
+    height: 100px;
 }
 
 .nextPage{
@@ -29,8 +57,10 @@ body{
     height: 80vh;
 }
 .nextPage p{
+    font-family: Arial;
+    font-size: 1.3em;
+    line-height: 40px;
     margin: 30px 50px;
-    font-size: 0.8em;
 }
 
 .lastPage{
@@ -44,6 +74,17 @@ body{
     height: 80vh;
 }
 .lastPage p{
+    font-family: Arial;
+    font-size: 1.3em;
+    line-height: 40px;
     margin: 30px 50px;
-    font-size: 0.8em;
+}
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
 }
