@@ -15,13 +15,16 @@ body{
     top: 0;
     width: 100%;
     height: 100vh;
+    font-weight: bolder;
 }
 .page p{
     font-family: Arial;
-    font-size: 1.3em;
+    font-size: 1.6em;
     line-height: 40px;
     margin: 30px 50px;
-    color: white;
+    color: #ffffff;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
 }
 .header{
     font-family: pricedown;
@@ -60,7 +63,9 @@ body{
     font-size: 1.3em;
     line-height: 40px;
     margin: 30px 50px;
-    color: white;
+    color: #ffffff;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
 }
 
 .lastPage{
@@ -78,7 +83,9 @@ body{
     font-size: 1.3em;
     line-height: 40px;
     margin: 30px 50px;
-    color: white;
+    color: #ffffff;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
 }
 .sida1{
     position: absolute;
@@ -121,11 +128,18 @@ body{
     height: 100%;
     background-image: url(myndir/grand-theft-auto-5-wallpaper-013.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; 
 }
 
 
-
+.texti{
+    font-family: pricedown;
+    font-size: 4em;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: black;
+    color: white;
+    text-align: center;
+}
 
 
 
