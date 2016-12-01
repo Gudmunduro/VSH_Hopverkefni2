@@ -11,6 +11,16 @@ function onScroll(e) {
     }
 }
 
+function keydown(e)
+{
+    if (disabled) return;
+    switch (e.which)
+    {
+        case 38: lastPage(); break;
+        case 40: nextPage(); break;
+    }
+}
+
 function nextPage()
 {
     if (currentPage == pageCount) return;
